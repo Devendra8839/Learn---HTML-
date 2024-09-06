@@ -1,5 +1,3 @@
-.p-card{
-  height: 400px;
-  width: 400px;
+.card-lists, .card-holder{
   border: 1px solid red;
 }
