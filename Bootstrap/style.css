@@ -1,3 +1,51 @@
 .card-lists, .card-holder{
   border: 1px solid red;
 }
+
+/* li{
+  margin-left: 20px;
+  list-style: none;
+} */
+
+.scroll-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .scroll-btn {
+      position: absolute;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 10px;
+      z-index: 10;
+    }
+    .scroll-btn.left {
+      left: 0;
+    }
+    .scroll-btn.right {
+      right: 0;
+    }
+    .scroll-content {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 10px;
+    }
+    .scroll-content::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+    }
+    .scroll-content li {
+      list-style: none;
+      margin: 0 5px;
+    }
+    .scroll-content img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+.footer-container ul{
+  list-style: none;
+}
